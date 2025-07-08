@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quote Generator Web App
 
-## Getting Started
+This is a simple Quote Generator Web App built with Next.js 15 (App Router), ShadCN UI, Tailwind CSS, and pnpm.  
+It allows users to enter a topic and displays three relevant quotes from a local array.
 
-First, run the development server:
+Deployed on Vercel:  
+https://nexium-aiza.vercel.app/
+
+## Features
+- Built using Next.js 15 with App Router (`src/app` structure)
+- Styled with Tailwind CSS and ShadCN UI components
+- Accepts a topic input through a form
+- Displays three quotes from a predefined local array
+- Responsive design and fast performance
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Folder/File             Purpose
+────────────────────────────────────────────────────────────────
+public/                 Static assets
+src/app/page.tsx        Main page (Quote Generator)
+src/components/         Reusable UI components (if any)
+package.json            Project dependencies and scripts
+pnpm-lock.yaml          pnpm lockfile
+tailwind.config.js      Tailwind CSS configuration
+postcss.config.js       PostCSS configuration
+next.config.ts          Next.js configuration
+tsconfig.json           TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+- **Next.js 15 (App Router)**
+- **React 19**
+- **Tailwind CSS 4**
+- **ShadCN UI**
+- **pnpm** (Package manager)
+- **TypeScript**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation and Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/Aiza166/Nexium_Aiza.git
+cd Nexium_Aiza
+pnpm install
+pnpm run dev
+```
 
-## Learn More
+The app will be available at http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
+## Build and Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm run build
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+The app is deployed on Vercel with automatic deployments from GitHub.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is intended for educational and demonstration purposes.
